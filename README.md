@@ -1,6 +1,7 @@
 现实货币兑换APP
 
-![image](https://imgur.com/a/Xp7TJyM)
+![Image text](preview.png)
+
 
 上图中，只做1，3
 不调用API
