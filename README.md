@@ -1,6 +1,6 @@
 现实货币兑换APP
 
-![image](https://github.com/NordaOkcidenta/CurrencyConverter/assets/145087801/9e9a1e23-8a36-48f9-9f5b-8e4f8278a5c0](https://assets.materialup.com/uploads/354f4ad1-f7c9-4be8-96a2-d9cc69f2af80/preview.png)
+![image](https://imgur.com/a/Xp7TJyM)
 
 上图中，只做1，3
 不调用API
