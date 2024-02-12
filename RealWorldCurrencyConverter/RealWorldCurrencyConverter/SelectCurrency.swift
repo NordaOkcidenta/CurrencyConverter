@@ -21,10 +21,10 @@ struct SelectCurrency: View {
                     .init(color: Color(red: 221/255, green: 99/255, blue: 186/255), location: 0.5),
                     .init(color: Color(red: 129/255, green: 55/255, blue: 219/255), location: 1)
                 ]), startPoint: .bottomTrailing, endPoint: .topLeading)
-                    .frame(width: 321.625, height: 203.5)
+                    .frame(width: 325.625, height: 205.5)
                     .cornerRadius(25)
-                    .opacity(0.5)
-                    .padding(.top, 7)
+                    .opacity(0.7)
+                    .padding(.top, 9)
                     .blur(radius: 10)
                 
             }
@@ -41,6 +41,41 @@ struct SelectCurrency: View {
                 //方块长宽比符合黄金比例
                 .frame(width: 320.625, height: 202.5)
                 .cornerRadius(25)
+                .overlay(
+                
+                    VStack {
+                        
+                        HStack {
+                            
+                            VStack {
+                                Text("Current Selection")
+                                    .foregroundStyle(Color.white)
+                                    .font(.caption)
+                                HStack {
+                                    Image(systemName: "dollarsign")
+                                        .font(.title2)
+                                        .foregroundStyle(Color.white)
+                                        .bold()
+                                        
+                                    Text("5,750.20")
+                                        .font(.title2)
+                                        .foregroundStyle(Color.white)
+                                        .bold()
+                                }
+                            }
+                            
+                            Spacer()
+                            
+                            Text("USD")
+                                .font(.title2)
+                                .foregroundStyle(Color.white)
+                                .bold()
+                            
+                        }
+                        
+                    }
+                
+                )
                 
                 Spacer()
             }
