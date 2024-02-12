@@ -66,15 +66,87 @@ struct SelectCurrency: View {
                             
                             Spacer()
                             
-                            Text("USD")
-                                .font(.title2)
-                                .foregroundStyle(Color.white)
-                                .bold()
+                            Image(.appleLogoWhiteSvg)
+                                .resizable()
+                                .scaledToFit()
+                                .opacity(0.7)
+                                .frame(width: 30)
+                                .padding(.top,-3)
+                            
+//                            Text("USD")
+//                                .font(.title2)
+//                                .foregroundStyle(Color.white)
+//                                .bold()
                             
                         }
                         
+                        Spacer()
+                        
+                        HStack {
+                            
+                            HStack {
+                                Image(systemName: "dollarsign.arrow.circlepath")
+                                    .foregroundStyle(Color.white)
+                                    .font(.title3)
+                                Text("USD")
+                                    .foregroundStyle(Color.white)
+                                    .font(.caption2)
+                                    .bold()
+                            }
+                            
+                            Spacer()
+                            
+                            HStack {
+                                
+                                Button(action: {
+                                
+                                    //TBD
+                                    
+                                }) {
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .foregroundColor(Color.white.opacity(0.4))
+                                        
+                                        HStack {
+                                            Text("Done")
+                                                .foregroundColor(Color.white)
+                                                .bold()
+                                                .frame(width: 90, height: 40)
+                                            
+                                            Spacer()
+                                            
+                                            Image(systemName: "chevron.up.chevron.down")
+                                                .foregroundColor(.white)
+                                                .bold()
+                                                .font(.caption2)
+                                                .padding(.leading, -20)
+                                        }
+                                        .padding(.horizontal, 10)
+                                    }
+                                }
+                                .frame(width: 110, height: 40)
+                                
+//                                Button() {
+//                                    
+//                                } label: {
+//                                    
+//                                    Text("Done")
+//                                        .foregroundStyle(Color.white)
+//                                        .bold()
+//                                        .frame(width: 110, height: 40)
+//                                        .background(Color.white.opacity(0.4))
+//                                        .clipShape(RoundedRectangle(cornerRadius:10))
+//                                        
+//                                    
+//                                }
+                                
+                            }
+                        }
+                        
+                        
                     }
-                
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 27)
                 )
                 
                 Spacer()
