@@ -1,6 +1,7 @@
 现实货币兑换APP
 
- 
+![image](https://github.com/NordaOkcidenta/CurrencyConverter/assets/145087801/9e9a1e23-8a36-48f9-9f5b-8e4f8278a5c0)
+
 上图中，只做1，3
 不调用API
 我们需要自己做一个键盘
@@ -23,7 +24,3 @@ Github上协作编写代码
 | 人民币 (CNH)    | Chinese Renminbi | 1美元 (USD) ≈ 6.37人民币 (CNH)    |
 | 科威特第纳尔 (KWD) | Kuwaiti Dinar  | 1美元 (USD) ≈ 0.302科威特第纳尔 (KWD) |
 | 韩元 (KRW)     | South Korean Won | 1美元 (USD) ≈ 1173.50韩元 (KRW) |
-
-
-
-![image](https://github.com/NordaOkcidenta/CurrencyConverter/assets/145087801/9e9a1e23-8a36-48f9-9f5b-8e4f8278a5c0)
