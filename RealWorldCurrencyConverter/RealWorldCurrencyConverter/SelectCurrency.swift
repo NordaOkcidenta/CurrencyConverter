@@ -24,7 +24,7 @@ struct SelectCurrency: View {
                     .frame(width: 325.625, height: 205.5)
                     .cornerRadius(25)
                     .opacity(0.7)
-                    .padding(.top, 9)
+                    .padding(.top, 15)
                     .blur(radius: 10)
                 
             }
@@ -34,11 +34,12 @@ struct SelectCurrency: View {
                 
                 LinearGradient(gradient: Gradient(stops: [
                     .init(color: Color(red: 129/255, green: 55/255, blue: 219/255), location: 0),
-                    .init(color: Color(red: 221/255, green: 99/255, blue: 186/255), location: 0.5),
+                    .init(color: Color(red: 221/255, green: 99/255, blue: 186/255), location: 0.33),
+                    .init(color: Color(red: 236/255, green: 118/255, blue: 134/255), location: 0.66),
                     .init(color: Color(red: 230/255, green: 193/255, blue: 148/255), location: 1)
                 ]), startPoint: .topLeading, endPoint: .bottomTrailing)
                 
-                //方块长宽比符合黄金比例
+                //黄金比例
                 .frame(width: 320.625, height: 202.5)
                 .cornerRadius(25)
                 .overlay(
@@ -47,23 +48,25 @@ struct SelectCurrency: View {
                         
                         HStack {
                             
-                            VStack {
+                            VStack(alignment: .leading) {
                                 Text("Current Selection")
-                                    .foregroundStyle(Color.white)
+                                    .foregroundColor(Color.white)
                                     .font(.caption)
+                                
                                 HStack {
                                     Image(systemName: "dollarsign")
-                                        .font(.title2)
-                                        .foregroundStyle(Color.white)
+                                        .font(.title3)
+                                        .foregroundColor(Color.white)
                                         .bold()
-                                        
+                                    
                                     Text("5,750.20")
                                         .font(.title2)
-                                        .foregroundStyle(Color.white)
+                                        .foregroundColor(Color.white)
                                         .bold()
+                                        .padding(.leading, -7)
                                 }
                             }
-                            
+
                             Spacer()
                             
                             Image(.appleLogoWhiteSvg)
@@ -73,26 +76,26 @@ struct SelectCurrency: View {
                                 .frame(width: 30)
                                 .padding(.top,-3)
                             
-//                            Text("USD")
-//                                .font(.title2)
-//                                .foregroundStyle(Color.white)
-//                                .bold()
-                            
                         }
                         
                         Spacer()
                         
-                        HStack {
+                        HStack(/*将里面的所有子HStack靠下对齐*/alignment: .bottom) {
                             
-                            HStack {
+                            HStack(/*将text与左边$对齐*/alignment: .bottom) {
                                 Image(systemName: "dollarsign.arrow.circlepath")
                                     .foregroundStyle(Color.white)
                                     .font(.title3)
                                 Text("USD")
                                     .foregroundStyle(Color.white)
                                     .font(.caption2)
+                                    .padding(.leading, -5)
                                     .bold()
+                                
                             }
+                            
+                            
+
                             
                             Spacer()
                             
@@ -125,20 +128,6 @@ struct SelectCurrency: View {
                                     }
                                 }
                                 .frame(width: 110, height: 40)
-                                
-//                                Button() {
-//                                    
-//                                } label: {
-//                                    
-//                                    Text("Done")
-//                                        .foregroundStyle(Color.white)
-//                                        .bold()
-//                                        .frame(width: 110, height: 40)
-//                                        .background(Color.white.opacity(0.4))
-//                                        .clipShape(RoundedRectangle(cornerRadius:10))
-//                                        
-//                                    
-//                                }
                                 
                             }
                         }
