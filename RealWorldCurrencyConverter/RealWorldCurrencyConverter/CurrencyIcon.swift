@@ -55,7 +55,7 @@ struct CurrencyIcon: View {
         .frame(width: dataStore.theWidth, height: dataStore.theHeight*0.4)
         .background(Color(red: 244/255, green: 238/255, blue: 249/255))
         .cornerRadius(25)
-        
+        //Test
     }
 }
 
