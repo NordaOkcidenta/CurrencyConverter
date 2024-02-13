@@ -19,13 +19,15 @@ struct ContentView: View {
             
         } label: {
             
-            Text("Test")
-                .font(.largeTitle)
-                .bold()
-                .foregroundStyle(Color.white)
+            HStack{
+                Text("Test")
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundStyle(Color.white)
+            }
+            .frame(width: 200, height: 100)
             
         }
-        .frame(width: 200, height: 100)
         .background(Color.gray)
         .clipShape(Capsule())
         .sheet(isPresented: $showSelectCurrency) {
