@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var showSelectCurrency = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        Button{
+            
+            showSelectCurrency.toggle()
+            
+        } label: {
+            
+            Text("Test")
+                .font(.largeTitle)
+                .bold()
+                .foregroundStyle(Color.white)
+            
         }
-        .padding()
+        .frame(width: 200, height: 100)
+        .background(Color.gray)
+        .clipShape(Capsule())
+        .sheet(isPresented: $showSelectCurrency) {
+            SelectCurrency()
+        }
+        
     }
 }
 

@@ -9,7 +9,9 @@ import SwiftUI
 
 struct SelectCurrency: View {
     
-    let theWidth: CGFloat = 320.625
+    @Environment(\.dismiss) var dismiss
+    
+    let theWidth: CGFloat = 340.625
     var height: CGFloat{
         return theWidth * 0.63
     }
@@ -162,17 +164,20 @@ struct SelectCurrency: View {
                 
             }
             
-            Text("Converted Rates")
-                .font(.title3)
-                .bold()
-                .padding()
+            HStack{
+                Text("Converted Rates")
+                    .font(.title3)
+                    .bold()
+                    .padding(.leading, 25)
+                    .padding(.top, 25)
+            }
             
         }
-        .border(Color.black)
+
         
         ScrollView {
             
-            //所有货币在此
+            //USD
             HStack {
                 
                 HStack{
@@ -214,8 +219,235 @@ struct SelectCurrency: View {
             .frame(width: theWidth, height: height*0.40)
             .background(Color(red: 244/255, green: 238/255, blue: 249/255))
             .cornerRadius(25)
+            .padding(.vertical, 3.5)
             
-
+            
+            //USD
+            HStack {
+                
+                HStack{
+                    
+                    Image(.us)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 62)
+                        .clipShape(Circle())
+                    
+                    VStack(alignment: .leading) {
+                        
+                        Text("America")
+                            .font(.body)
+                        Text("USD")
+                            .font(.caption)
+                            .bold()
+                            .foregroundStyle(Color(red: 254/255, green: 105/255, blue: 156/255))
+                        
+                    }
+                    
+                    Spacer()
+                    
+                    VStack(alignment: .trailing) {
+                        
+                        Text("+2.00%")
+                            .font(.caption)
+                            .bold()
+                            .foregroundStyle(Color.red)
+                        Text("$5750.20")
+                            .font(.footnote)
+                            .bold()
+                        
+                    }
+                }
+                .padding()
+                
+            }
+            .frame(width: theWidth, height: height*0.40)
+            .background(Color(red: 244/255, green: 238/255, blue: 249/255))
+            .cornerRadius(25)
+            .padding(.vertical, 3.5)
+            
+            
+            //USD
+            HStack {
+                
+                HStack{
+                    
+                    Image(.us)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 62)
+                        .clipShape(Circle())
+                    
+                    VStack(alignment: .leading) {
+                        
+                        Text("America")
+                            .font(.body)
+                        Text("USD")
+                            .font(.caption)
+                            .bold()
+                            .foregroundStyle(Color(red: 254/255, green: 105/255, blue: 156/255))
+                        
+                    }
+                    
+                    Spacer()
+                    
+                    VStack(alignment: .trailing) {
+                        
+                        Text("+2.00%")
+                            .font(.caption)
+                            .bold()
+                            .foregroundStyle(Color.red)
+                        Text("$5750.20")
+                            .font(.footnote)
+                            .bold()
+                        
+                    }
+                }
+                .padding()
+                
+            }
+            .frame(width: theWidth, height: height*0.40)
+            .background(Color(red: 244/255, green: 238/255, blue: 249/255))
+            .cornerRadius(25)
+            .padding(.vertical, 3.5)
+            
+            
+            //USD
+            HStack {
+                
+                HStack{
+                    
+                    Image(.us)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 62)
+                        .clipShape(Circle())
+                    
+                    VStack(alignment: .leading) {
+                        
+                        Text("America")
+                            .font(.body)
+                        Text("USD")
+                            .font(.caption)
+                            .bold()
+                            .foregroundStyle(Color(red: 254/255, green: 105/255, blue: 156/255))
+                        
+                    }
+                    
+                    Spacer()
+                    
+                    VStack(alignment: .trailing) {
+                        
+                        Text("+2.00%")
+                            .font(.caption)
+                            .bold()
+                            .foregroundStyle(Color.red)
+                        Text("$5750.20")
+                            .font(.footnote)
+                            .bold()
+                        
+                    }
+                }
+                .padding()
+                
+            }
+            .frame(width: theWidth, height: height*0.40)
+            .background(Color(red: 244/255, green: 238/255, blue: 249/255))
+            .cornerRadius(25)
+            .padding(.vertical, 3.5)
+            
+            
+            
+            
+            //USD
+            HStack {
+                
+                HStack{
+                    
+                    Image(.us)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 62)
+                        .clipShape(Circle())
+                    
+                    VStack(alignment: .leading) {
+                        
+                        Text("America")
+                            .font(.body)
+                        Text("USD")
+                            .font(.caption)
+                            .bold()
+                            .foregroundStyle(Color(red: 254/255, green: 105/255, blue: 156/255))
+                        
+                    }
+                    
+                    Spacer()
+                    
+                    VStack(alignment: .trailing) {
+                        
+                        Text("+2.00%")
+                            .font(.caption)
+                            .bold()
+                            .foregroundStyle(Color.red)
+                        Text("$5750.20")
+                            .font(.footnote)
+                            .bold()
+                        
+                    }
+                }
+                .padding()
+                
+            }
+            .frame(width: theWidth, height: height*0.40)
+            .background(Color(red: 244/255, green: 238/255, blue: 249/255))
+            .cornerRadius(25)
+            .padding(.vertical, 3.5)
+            
+            
+            
+            //USD
+            HStack {
+                
+                HStack{
+                    
+                    Image(.us)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 62)
+                        .clipShape(Circle())
+                    
+                    VStack(alignment: .leading) {
+                        
+                        Text("America")
+                            .font(.body)
+                        Text("USD")
+                            .font(.caption)
+                            .bold()
+                            .foregroundStyle(Color(red: 254/255, green: 105/255, blue: 156/255))
+                        
+                    }
+                    
+                    Spacer()
+                    
+                    VStack(alignment: .trailing) {
+                        
+                        Text("+2.00%")
+                            .font(.caption)
+                            .bold()
+                            .foregroundStyle(Color.red)
+                        Text("$5750.20")
+                            .font(.footnote)
+                            .bold()
+                        
+                    }
+                }
+                .padding()
+                
+            }
+            .frame(width: theWidth, height: height*0.40)
+            .background(Color(red: 244/255, green: 238/255, blue: 249/255))
+            .cornerRadius(25)
+            .padding(.vertical, 3.5)
             
         }
         
