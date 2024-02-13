@@ -14,6 +14,7 @@ import SwiftUI
 enum Currency: Double, CaseIterable, Identifiable {
     
     case USD = 1
+    case CNY = 7
     
     var id: Currency {
         self
@@ -24,6 +25,8 @@ enum Currency: Double, CaseIterable, Identifiable {
         switch self {
         case .USD:
                 .us
+        case .CNY:
+                .cn
         }
         
     }
@@ -33,6 +36,8 @@ enum Currency: Double, CaseIterable, Identifiable {
         switch self {
         case .USD:
             "America"
+        case .CNY:
+            "China"
         }
     }
     
