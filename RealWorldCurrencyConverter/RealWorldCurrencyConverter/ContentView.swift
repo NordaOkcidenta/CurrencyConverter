@@ -31,7 +31,7 @@ struct ContentView: View {
         .background(Color.gray)
         .clipShape(Capsule())
         .sheet(isPresented: $showSelectCurrency) {
-            SelectCurrency()
+            SelectCurrency(currentSelectionCurrency: .constant(.AUD))
         }
         
     }

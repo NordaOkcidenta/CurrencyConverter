@@ -20,6 +20,7 @@ class DataStore: ObservableObject {
 struct SelectCurrency: View {
     
     @Environment(\.dismiss) var dismiss
+    @Binding var currentSelectionCurrency: Currency
     
     // 此处声明你的ObservableObject
     var dataStore = DataStore()
@@ -180,11 +181,11 @@ struct SelectCurrency: View {
                     .padding(.top, 25)
             }
         }
-//                CurrencyScrollView()
+        CurrencyScrollView(currency: $currentSelectionCurrency)
     }
     
 }
 
 #Preview {
-    SelectCurrency()
+    SelectCurrency(currentSelectionCurrency: .constant(.CAD))
 }

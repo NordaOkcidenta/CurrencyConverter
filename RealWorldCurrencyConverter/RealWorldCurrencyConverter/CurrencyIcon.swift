@@ -10,6 +10,16 @@ import SwiftUI
 struct CurrencyIcon: View {
     
     var dataStore = DataStore()
+    let currencyImage: ImageResource
+    
+    //例如USD CNY GBP
+    let currencyName: String
+    
+    let countryName: String
+    let currencySymbol: String //例如£€$¥
+    var valueAfterConversion: String //例如5150.20
+    
+    
     
     var body: some View {
 
@@ -18,7 +28,7 @@ struct CurrencyIcon: View {
             
             HStack{
                 
-                Image(.us)
+                Image(currencyImage)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 62)
@@ -26,9 +36,9 @@ struct CurrencyIcon: View {
                 
                 VStack(alignment: .leading) {
                     
-                    Text("America")
+                    Text(countryName)
                         .font(.body)
-                    Text("USD")
+                    Text(currencyName)
                         .font(.caption)
                         .bold()
                         .foregroundStyle(Color(red: 254/255, green: 105/255, blue: 156/255))
@@ -43,7 +53,7 @@ struct CurrencyIcon: View {
                         .font(.caption)
                         .bold()
                         .foregroundStyle(Color.red)
-                    Text("$5750.20")
+                    Text(currencySymbol+valueAfterConversion)
                         .font(.footnote)
                         .bold()
                     
@@ -59,5 +69,5 @@ struct CurrencyIcon: View {
 }
 
 #Preview {
-    CurrencyIcon()
+    CurrencyIcon(currencyImage: .us, currencyName: "USD", countryName: "America", currencySymbol: "$", valueAfterConversion: "1234.56")
 }

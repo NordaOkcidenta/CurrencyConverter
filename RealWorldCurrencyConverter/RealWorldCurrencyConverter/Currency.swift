@@ -14,7 +14,15 @@ import SwiftUI
 enum Currency: Double, CaseIterable, Identifiable {
     
     case USD = 1
-    case CNY = 7
+    case EUR = 0.89
+    case JPY = 115.59
+    case GBP = 0.75
+    case AUD = 1.32
+    case CAD = 1.25
+    case CHF = 0.92
+    case CNY = 6.37
+    case KWD = 0.302
+    case KRW = 1173.50
     
     var id: Currency {
         self
@@ -27,17 +35,100 @@ enum Currency: Double, CaseIterable, Identifiable {
                 .us
         case .CNY:
                 .cn
+        case .EUR:
+                .eu
+        case .JPY:
+                .jp
+        case .GBP:
+                .gb
+        case .AUD:
+                .au
+        case .CAD:
+                .ca
+        case .CHF:
+                .ch
+        case .KWD:
+                .kw
+        case .KRW:
+                .kr
         }
         
     }
     
-    var CountryName: String {
+    var countryName: String {
         
         switch self {
         case .USD:
             "America"
         case .CNY:
             "China"
+        case .EUR:
+            "Europe"
+        case .JPY:
+            "Japan"
+        case .GBP:
+            "Britain"
+        case .AUD:
+            "Australia"
+        case .CAD:
+            "Canada"
+        case .CHF:
+            "Switzerland"
+        case .KWD:
+            "Kuwait"
+        case .KRW:
+            "South Korea"
+        }
+    }
+    
+    var currencySymbol: String {
+        switch self {
+        case .USD:
+            return "$"
+        case .CNY:
+            return "¥"
+        case .EUR:
+            return "€"
+        case .JPY:
+            return "¥"
+        case .GBP:
+            return "£"
+        case .AUD:
+            return "$"
+        case .CAD:
+            return "$"
+        case .CHF:
+            return "₣"
+        case .KWD:
+            return "د.ك"
+        case .KRW:
+            return "₩"
+        }
+    }
+
+    var currencyName: String {
+        
+        switch self {
+        case .USD:
+            "USD"
+        case .CNY:
+            "CNY"
+        case .EUR:
+            "EUR"
+        case .JPY:
+            "JPY"
+        case .GBP:
+            "GBP"
+        case .AUD:
+            "AUD"
+        case .CAD:
+            "CAD"
+        case .CHF:
+            "CHF"
+        case .KWD:
+            "KWD"
+        case .KRW:
+            "KRW"
         }
     }
     
