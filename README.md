@@ -1,6 +1,6 @@
 现实货币兑换APP
 
-![Image text](preview.png)
+![Image text](preview.jpg)
 
 
 上图中，只做1，3
