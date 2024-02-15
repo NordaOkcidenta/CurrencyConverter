@@ -5,6 +5,8 @@
 //  Created by SamLi on 2024/2/12.
 //
 
+//TODO: Fix Country flags
+
 import SwiftUI
 
 struct CurrencyScrollView: View {
