@@ -34,7 +34,7 @@ enum Currency: Double, CaseIterable, Identifiable {
         case .USD:
                 .us
         case .CNY:
-                .cn
+                .china
         case .EUR:
                 .eu
         case .JPY:

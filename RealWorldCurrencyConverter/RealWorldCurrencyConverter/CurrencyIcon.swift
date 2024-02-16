@@ -31,7 +31,7 @@ struct CurrencyIcon: View {
                 Image(currencyImage)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 62)
+                    .frame(width: 48)
                     .clipShape(Circle())
                 
                 VStack(alignment: .leading) {
