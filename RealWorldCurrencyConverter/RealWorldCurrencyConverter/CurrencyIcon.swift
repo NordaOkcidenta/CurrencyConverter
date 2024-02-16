@@ -28,11 +28,19 @@ struct CurrencyIcon: View {
             
             HStack{
                 
-                Image(currencyImage)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 48)
-                    .clipShape(Circle())
+                if(currencyImage == .china) {
+                    Image(currencyImage)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 55)
+                        .clipShape(Circle())
+                }else{
+                    Image(currencyImage)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 48)
+                        .clipShape(Circle())
+                }
                 
                 VStack(alignment: .leading) {
                     
