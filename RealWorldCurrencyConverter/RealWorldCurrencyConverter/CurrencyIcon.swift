@@ -28,7 +28,7 @@ struct CurrencyIcon: View {
             
             HStack{
                 
-                if(currencyImage == .china) {
+                if(currencyImage == .china)||(currencyImage == .kr) {
                     Image(currencyImage)
                         .resizable()
                         .scaledToFit()

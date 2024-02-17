@@ -23,6 +23,8 @@ enum Currency: Double, CaseIterable, Identifiable {
     case CNY = 6.37
     case KWD = 0.302
     case KRW = 1173.50
+    case BTC = 0.000019//Bitcoin,₿
+    case ETH = 0.000363576//Ethereum,Ξ
     
     var id: Currency {
         self
@@ -31,6 +33,8 @@ enum Currency: Double, CaseIterable, Identifiable {
     var image: ImageResource {
         
         switch self {
+        case .ETH:
+                .ethereum
         case .USD:
                 .us
         case .CNY:
@@ -51,6 +55,8 @@ enum Currency: Double, CaseIterable, Identifiable {
                 .kw
         case .KRW:
                 .kr
+        case .BTC:
+                .bitcoin
         }
         
     }
@@ -58,6 +64,8 @@ enum Currency: Double, CaseIterable, Identifiable {
     var countryName: String {
         
         switch self {
+        case .ETH:
+            "Ethereum"
         case .USD:
             "America"
         case .CNY:
@@ -78,11 +86,15 @@ enum Currency: Double, CaseIterable, Identifiable {
             "Kuwait"
         case .KRW:
             "South Korea"
+        case .BTC:
+            "Bitcoin"
         }
     }
     
     var currencySymbol: String {
         switch self {
+        case .ETH:
+            return "Ξ"
         case .USD:
             return "$"
         case .CNY:
@@ -103,12 +115,16 @@ enum Currency: Double, CaseIterable, Identifiable {
             return "د.ك"
         case .KRW:
             return "₩"
+        case .BTC:
+            return "₿"
         }
     }
 
     var currencyName: String {
         
         switch self {
+        case .ETH:
+            "ETH"
         case .USD:
             "USD"
         case .CNY:
@@ -129,6 +145,8 @@ enum Currency: Double, CaseIterable, Identifiable {
             "KWD"
         case .KRW:
             "KRW"
+        case .BTC:
+            "BTC"
         }
     }
     
