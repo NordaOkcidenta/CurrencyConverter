@@ -1,4 +1,4 @@
-#CurrConverter
+<h1 align="center">Currency Converter</h1>
 
 An intuitive and visually appealing iOS currency conversion app, as our first iOS app project, inspired by the UI design from rhagency
 
