@@ -149,6 +149,9 @@ enum Currency: Double, CaseIterable, Identifiable {
             "BTC"
         }
     }
+        var code: String {
+            currencyName.lowercased()
+        }
     
     func convert(_ amountString: String, to currency: Currency) -> String {
         

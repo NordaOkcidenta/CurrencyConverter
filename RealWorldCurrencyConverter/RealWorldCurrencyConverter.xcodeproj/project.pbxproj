@@ -10,6 +10,7 @@
 		2713A1432B7B32FE00B8268A /* CurrencyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2713A1422B7B32FE00B8268A /* CurrencyIcon.swift */; };
 		275EB85C2B7AC0F6001348E7 /* SelectCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275EB85B2B7AC0F6001348E7 /* SelectCurrency.swift */; };
 		275EB85E2B7AECE2001348E7 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275EB85D2B7AECE2001348E7 /* Currency.swift */; };
+		27659ADE2B8169B6003AF8A8 /* GetExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27659ADD2B8169B5003AF8A8 /* GetExchangeRates.swift */; };
 		27A7AB662B7B22320043E302 /* CurrencyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7AB652B7B22320043E302 /* CurrencyScrollView.swift */; };
 		27AA54662B79A1EE006D3D9E /* RealWorldCurrencyConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA54652B79A1EE006D3D9E /* RealWorldCurrencyConverterApp.swift */; };
 		27AA54682B79A1EE006D3D9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA54672B79A1EE006D3D9E /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 		2713A1422B7B32FE00B8268A /* CurrencyIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyIcon.swift; sourceTree = "<group>"; };
 		275EB85B2B7AC0F6001348E7 /* SelectCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrency.swift; sourceTree = "<group>"; };
 		275EB85D2B7AECE2001348E7 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		27659ADD2B8169B5003AF8A8 /* GetExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeRates.swift; sourceTree = "<group>"; };
 		27A7AB652B7B22320043E302 /* CurrencyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyScrollView.swift; sourceTree = "<group>"; };
 		27AA54622B79A1EE006D3D9E /* RealWorldCurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealWorldCurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27AA54652B79A1EE006D3D9E /* RealWorldCurrencyConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealWorldCurrencyConverterApp.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				275EB85B2B7AC0F6001348E7 /* SelectCurrency.swift */,
 				27A7AB652B7B22320043E302 /* CurrencyScrollView.swift */,
 				2713A1422B7B32FE00B8268A /* CurrencyIcon.swift */,
+				27659ADD2B8169B5003AF8A8 /* GetExchangeRates.swift */,
 				275EB85D2B7AECE2001348E7 /* Currency.swift */,
 				27AA54692B79A1F0006D3D9E /* Assets.xcassets */,
 				27AA546B2B79A1F0006D3D9E /* Preview Content */,
@@ -152,6 +155,7 @@
 				27AA54682B79A1EE006D3D9E /* ContentView.swift in Sources */,
 				275EB85E2B7AECE2001348E7 /* Currency.swift in Sources */,
 				275EB85C2B7AC0F6001348E7 /* SelectCurrency.swift in Sources */,
+				27659ADE2B8169B6003AF8A8 /* GetExchangeRates.swift in Sources */,
 				27A7AB662B7B22320043E302 /* CurrencyScrollView.swift in Sources */,
 				27AA54662B79A1EE006D3D9E /* RealWorldCurrencyConverterApp.swift in Sources */,
 				2713A1432B7B32FE00B8268A /* CurrencyIcon.swift in Sources */,
