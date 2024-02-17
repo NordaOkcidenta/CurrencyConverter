@@ -169,10 +169,10 @@ enum Currency: Double, CaseIterable, Identifiable {
             return ""
         }
         
-        //获取除以1的余数
-        if (convertedAmount.truncatingRemainder(dividingBy: 1) == 0)||(convertedAmount.truncatingRemainder(dividingBy: 1) < 0.01) {
-            return String(format: "%.0f", convertedAmount)
-        }
+        //这段代码先注释掉因为最终需要实现的效果是有小数点的
+//        if (convertedAmount.truncatingRemainder(dividingBy: 1) == 0)||(convertedAmount.truncatingRemainder(dividingBy: 1) < 0.01) {
+//            return String(format: "%.0f", convertedAmount)
+//        }
         
         return String(format: "%.2f", convertedAmount)
     }

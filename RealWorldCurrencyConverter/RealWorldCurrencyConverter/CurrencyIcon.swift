@@ -19,8 +19,6 @@ struct CurrencyIcon: View {
     let currencySymbol: String //例如£€$¥
     var valueAfterConversion: String //例如5150.20
     
-    
-    
     var body: some View {
 
         HStack {

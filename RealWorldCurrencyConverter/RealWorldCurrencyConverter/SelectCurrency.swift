@@ -10,19 +10,18 @@ import SwiftUI
 class DataStore: ObservableObject {
     var theWidth: Double = 360.625
     
-    // 不使用@Published
     var theHeight: Double {
         return theWidth * 0.63
     }
 }
-
 
 struct SelectCurrency: View {
     
     @Environment(\.dismiss) var dismiss
     @Binding var currentSelectionCurrency: Currency
     
-    // 此处声明你的ObservableObject
+    @State var fromCurrencyAmount = "1000.00"
+    
     var dataStore = DataStore()
     
     var body: some View {
@@ -88,7 +87,7 @@ struct SelectCurrency: View {
                                             .foregroundColor(Color.white)
                                             .bold()
                                         
-                                        Text("5,750.20")
+                                        Text(fromCurrencyAmount)
                                             .font(.title2)
                                             .foregroundColor(Color.white)
                                             .bold()
@@ -181,7 +180,7 @@ struct SelectCurrency: View {
                     .padding(.top, 25)
             }
         }
-        CurrencyScrollView(currency: $currentSelectionCurrency)
+        CurrencyScrollView(currency: $currentSelectionCurrency, fromCurrencyAmount: $fromCurrencyAmount)
     }
     
 }
