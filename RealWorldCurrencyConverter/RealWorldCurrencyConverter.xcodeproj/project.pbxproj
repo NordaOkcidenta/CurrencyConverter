@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033D8C5B2B81B3FA00DB7790 /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D8C592B81B3FA00DB7790 /* NumberPad.swift */; };
+		033D8C5C2B81B3FA00DB7790 /* NumberPadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D8C5A2B81B3FA00DB7790 /* NumberPadButton.swift */; };
 		2713A1432B7B32FE00B8268A /* CurrencyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2713A1422B7B32FE00B8268A /* CurrencyIcon.swift */; };
 		275EB85C2B7AC0F6001348E7 /* SelectCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275EB85B2B7AC0F6001348E7 /* SelectCurrency.swift */; };
 		275EB85E2B7AECE2001348E7 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275EB85D2B7AECE2001348E7 /* Currency.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		033D8C592B81B3FA00DB7790 /* NumberPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberPad.swift; sourceTree = "<group>"; };
+		033D8C5A2B81B3FA00DB7790 /* NumberPadButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberPadButton.swift; sourceTree = "<group>"; };
 		2713A1422B7B32FE00B8268A /* CurrencyIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyIcon.swift; sourceTree = "<group>"; };
 		275EB85B2B7AC0F6001348E7 /* SelectCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrency.swift; sourceTree = "<group>"; };
 		275EB85D2B7AECE2001348E7 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
@@ -42,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033D8C582B81B34D00DB7790 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				033D8C592B81B3FA00DB7790 /* NumberPad.swift */,
+				033D8C5A2B81B3FA00DB7790 /* NumberPadButton.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
 		27AA54592B79A1EE006D3D9E = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +74,7 @@
 		27AA54642B79A1EE006D3D9E /* RealWorldCurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
+				033D8C582B81B34D00DB7790 /* Calculator */,
 				27AA54652B79A1EE006D3D9E /* RealWorldCurrencyConverterApp.swift */,
 				27AA54672B79A1EE006D3D9E /* ContentView.swift */,
 				275EB85B2B7AC0F6001348E7 /* SelectCurrency.swift */,
@@ -152,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033D8C5B2B81B3FA00DB7790 /* NumberPad.swift in Sources */,
 				27AA54682B79A1EE006D3D9E /* ContentView.swift in Sources */,
 				275EB85E2B7AECE2001348E7 /* Currency.swift in Sources */,
 				275EB85C2B7AC0F6001348E7 /* SelectCurrency.swift in Sources */,
@@ -159,6 +174,7 @@
 				27A7AB662B7B22320043E302 /* CurrencyScrollView.swift in Sources */,
 				27AA54662B79A1EE006D3D9E /* RealWorldCurrencyConverterApp.swift in Sources */,
 				2713A1432B7B32FE00B8268A /* CurrencyIcon.swift in Sources */,
+				033D8C5C2B81B3FA00DB7790 /* NumberPadButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
