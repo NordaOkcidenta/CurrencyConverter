@@ -9,4 +9,6 @@ An intuitive and visually appealing iOS currency conversion app, as our first iO
 - Rates are updated daily.
 - Sourced from fawazahmed0's currency-api.
 
+This project is solely made for our practice in iOS development and is not intended as a product for the general public.
+
 ![Image text](preview.jpg)
