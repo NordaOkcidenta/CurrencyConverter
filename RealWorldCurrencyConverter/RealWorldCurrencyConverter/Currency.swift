@@ -155,18 +155,20 @@ enum Currency: Double, CaseIterable, Identifiable {
     
     func convert(_ amountString: String, to currency: Currency) -> String {
         
-        guard let doubleAmount = Double(amountString) else {
-            return ""
+        let amountStringWithNoCommas = amountString.replacingOccurrences(of: ",", with: "")
+        
+        guard let doubleAmount = Double(amountStringWithNoCommas) else {
+            return "0.00"
         }
         
         let convertedAmount = doubleAmount / self.rawValue * currency.rawValue
         
         if (convertedAmount < 0.01) && (convertedAmount > 0){
-            return "< 0.01"
+            return "<0.01"
         }
         
         if (convertedAmount == 0) {
-            return ""
+            return "0.00"
         }
         
         //这段代码先注释掉因为最终需要实现的效果是有小数点的
@@ -175,6 +177,11 @@ enum Currency: Double, CaseIterable, Identifiable {
 //        }
         
         return String(format: "%.2f", convertedAmount)
+    }
+    
+    
+    func addComma(_ amountStringWithNoCommas: String) -> String {
+        
     }
     
 }

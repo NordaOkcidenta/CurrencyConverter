@@ -20,7 +20,7 @@ struct SelectCurrency: View {
     @Environment(\.dismiss) var dismiss
     @Binding var currentSelectionCurrency: Currency
     
-    @State var fromCurrencyAmount = "1000.00"
+    @State var fromCurrencyAmount = "1,000.00"
     
     var dataStore = DataStore()
     
