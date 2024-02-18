@@ -155,9 +155,9 @@ enum Currency: Double, CaseIterable, Identifiable {
     
     func convert(_ amountString: String, to currency: Currency) -> String {
         
-        let amountStringWithNoCommas = amountString.replacingOccurrences(of: ",", with: "")
+        let amountStrNoCommas = amountString.replacingOccurrences(of: ",", with: "")
         
-        guard let doubleAmount = Double(amountStringWithNoCommas) else {
+        guard let doubleAmount = Double(amountStrNoCommas) else {
             return "0.00"
         }
         
@@ -181,7 +181,7 @@ enum Currency: Double, CaseIterable, Identifiable {
     
     
     func addComma(_ amountStringWithNoCommas: String) -> String {
-        
+        amountStringWithNoCommas.replacingOccurrences(of: ",", with: "")
     }
     
 }
