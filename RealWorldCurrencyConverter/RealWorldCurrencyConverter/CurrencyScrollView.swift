@@ -18,7 +18,6 @@ struct CurrencyScrollView: View {
     
     var body: some View {
         
-        
         ScrollView {
 
             ForEach(Currency.allCases) { currency in //"currency" can be replace with a placeholder "_" underscroll

@@ -20,7 +20,7 @@ struct SelectCurrency: View {
     @Environment(\.dismiss) var dismiss
     @Binding var currentSelectionCurrency: Currency
     
-    @State var fromCurrencyAmount = "5975.00"
+    @State var fromCurrencyAmount = "5,975.00"
     
     var dataStore = DataStore()
     
@@ -130,8 +130,7 @@ struct SelectCurrency: View {
                                 HStack {
                                     
                                     Button(action: {
-                                        
-                                        //TBD
+                                    
                                         
                                     }) {
                                         ZStack {

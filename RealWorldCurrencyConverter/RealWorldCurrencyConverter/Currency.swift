@@ -175,13 +175,42 @@ enum Currency: Double, CaseIterable, Identifiable {
 //        if (convertedAmount.truncatingRemainder(dividingBy: 1) == 0)||(convertedAmount.truncatingRemainder(dividingBy: 1) < 0.01) {
 //            return String(format: "%.0f", convertedAmount)
 //        }
-        
-        return String(format: "%.2f", convertedAmount)
+        let fmt = String(format: "%.2f", convertedAmount)
+        return formatNum(fmt)
+//        return String(format: "%.2f", convertedAmount)
     }
     
     
-    func addComma(_ amountStringWithNoCommas: String) -> String {
-        amountStringWithNoCommas.replacingOccurrences(of: ",", with: "")
+    func formatNum(_ amountStringWithNoCommas: String) -> String {
+        
+        let originalString = amountStringWithNoCommas
+        if let range = originalString.range(of: ".") {
+            let firstPart = originalString[..<range.lowerBound]
+            let secondPart = originalString[range.upperBound...]
+            
+            let firstPartString = String(firstPart)
+            let secondPartString = String(secondPart).trimmingCharacters(in: .whitespaces)
+            
+            let reversedString = String(firstPartString.reversed())
+            var Arr: Array<String> = Array(arrayLiteral: reversedString)
+            var threeNum: Int = 0
+            for i in 0..<Arr.count {
+                threeNum += 1
+//                if(threeNum == 3) {
+                    Arr.insert(",", at: i/* + 1*/)
+                    threeNum = 0
+//                }
+            }
+            if (Arr.last==","){
+                Arr.removeLast()
+            }
+            return Arr.joined(separator: "")
+//            let newReversedString = Arr.joined(separator: "")
+//            let new1stPartString = String(newReversedString.reversed())
+//            let formattedStr: String = new1stPartString + "." + secondPartString
+//            return formattedStr
+        }
+        return "originalString"
     }
     
 }
