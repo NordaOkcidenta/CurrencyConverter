@@ -5,7 +5,7 @@ An intuitive and visually appealing iOS currency conversion app, as our first iO
 ---
  
 **Note:**
-- The app features currencies of 10 countries and 2 cryptocurrencies, ₿TC and ΞTH.
+- The app features currencies of 10 countries and 2 cryptocurrencies, (₿)BTC and (Ξ)ETH.
 - Rates are updated daily.
 - Sourced from fawazahmed0's currency-api.
 
